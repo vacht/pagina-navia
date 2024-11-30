@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calificaciones de alumno</title>
+    <link rel="icon" href="https://www.icesi.edu.co/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="https://www.icesi.edu.co/favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+
+        header {
+            background-color: #003366;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+
+        table th, table td {
+            border: 1px solid #ddd;
+            text-align: left;
+            padding: 0.8rem;
+        }
+
+        table th {
+            background-color: #003366;
+            color: white;
+        }
+
+        table tbody tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        .action-button {
+            background-color: #003366;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .action-button:hover {
+            background-color: #00509e;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ver Calificaciones</h1>
+    </header>
+    <div class="container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Materia</th>
+                    <th>Título de curso</th>
+                    <th>Campus</th>
+                    <th>Calificación final</th>
+                    <th>Horas intentadas</th>
+                    <th>Horas ganadas</th>
+                    <th>Horas PGA</th>
+                    <th>Puntos de calificación</th>
+                    <th>NRC</th>
+                    <th>Acción</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>CLI 19018, 000</td>
+                    <td>Nivelación</td>
+                    <td>P</td>
+                    <td>Aprob</td>
+                    <td>0,000</td>
+                    <td>0,000</td>
+                    <td></td>
+                    <td></td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>GES 01302, 007</td>
+                    <td>Organizaciones</td>
+                    <td>P</td>
+                    <td>4.0</td>
+                    <td>2,000</td>
+                    <td>2,000</td>
+                    <td>2,000</td>
+                    <td>2,000</td>
+                    <td>10012</td>
+                    <td><button class="action-button" onclick="redirectTo('componentes_organizaciones.html')">Componentes</button></td>
+                </tr>
+                <tr>
+                    <td>MAT 08272, 015</td>
+                    <td>Álgebra y funciones</td>
+                    <td>P</td>
+                    <td>3.8</td>
+                    <td>4,000</td>
+                    <td>4,000</td>
+                    <td>4,000</td>
+                    <td>4,000</td>
+                    <td>10213</td>
+                    <td><button class="action-button" onclick="redirectTo('componentes_algebra.html')">Componentes</button></td>
+                </tr>
+                <tr>
+                    <td>MAT 08273, 033</td>
+                    <td>Lógica y argumentación</td>
+                    <td>P</td>
+                    <td>3.5</td>
+                    <td>3,000</td>
+                    <td>3,000</td>
+                    <td>3,000</td>
+                    <td>3,000</td>
+                    <td>10236</td>
+                    <td><button class="action-button" onclick="redirectTo('componentes_logica.html')">Componentes</button></td>
+                </tr>
+                <tr>
+                    <td>HUM 02868, 009</td>
+                    <td>Fundamentos de derecho constitucional</td>
+                    <td>P</td>
+                    <td>4.0</td>
+                    <td>3,000</td>
+                    <td>3,000</td>
+                    <td>3,000</td>
+                    <td>3,000</td>
+                    <td>10282</td>
+                    <td><button class="action-button" onclick="redirectTo('componentes_funda.html')">Componentes</button></td>
+                </tr>
+                <tr>
+                    <td>LYP 38001, 039</td>
+                    <td>Comunicación escrita 1</td>
+                    <td>P</td>
+                    <td>4.0</td>
+                    <td>3,000</td>
+                    <td>3,000</td>
+                    <td>3,000</td>
+                    <td>3,000</td>
+                    <td>11029</td>
+                    <td><button class="action-button" onclick="redirectTo('componentes_coe.html')">Componentes</button></td>
+                </tr>
+                <tr>
+                    <td>MER 03213, 005</td>
+                    <td>Introducción a los negocios internacionales</td>
+                    <td>P</td>
+                    <td>4.0</td>
+                    <td>2,000</td>
+                    <td>2,000</td>
+                    <td>2,000</td>
+                    <td>2,000</td>
+                    <td>11149</td>
+                    <td><button class="action-button" onclick="redirectTo('componentes_intro.html')">Componentes</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        // Función para redirigir a la página específica
+        function redirectTo(url) {
+            window.location.href = url;
+        }
+    </script>
+</body>
+</html>

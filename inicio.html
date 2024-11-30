@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Universidad Icesi</title>
+    <link rel="icon" href="https://www.icesi.edu.co/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="https://www.icesi.edu.co/favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        /* Estilo del menú lateral */
+        .sidebar {
+            width: 250px;
+            height: 100vh;
+            background-color: #4c6ef5;
+            color: white;
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: flex;
+            flex-direction: column;
+            padding-top: 20px;
+        }
+
+        .sidebar h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 1.2em;
+        }
+
+        .sidebar a {
+            text-decoration: none;
+            color: white;
+            padding: 15px;
+            display: block;
+            transition: background 0.3s;
+        }
+
+        .sidebar a:hover {
+            background-color: #365fcf;
+        }
+
+        .sidebar a.active {
+            background-color: #273eaa;
+        }
+
+        /* Contenido principal */
+        .main-content {
+            margin-left: 250px;
+            padding: 20px;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .header h1 {
+            margin: 0;
+        }
+
+        .icons-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .icon {
+            text-align: center;
+            padding: 10px;
+        }
+
+        .icon img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .anuncios,
+        .noticias {
+            margin-top: 20px;
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .anuncios h3,
+        .noticias h3 {
+            margin-top: 0;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .footer img {
+            width: 30px;
+            height: 30px;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Menú lateral -->
+    <div class="sidebar">
+        <h2>Universidad Icesi</h2>
+        <a href="#" class="active">Inicio</a>
+        <a href="estudiante_pregrado.html">Estudiantes Pregrado</a>
+    </div>
+
+    <!-- Contenido principal -->
+    <div class="main-content">
+        <div class="header">
+            <h1>InicioHome</h1>
+            <span> Usuario: Juan José Navia Salazar</span>
+        </div>
+
+        <div class="icons-container">
+            <div class="icon">
+                <img src="https://www.icesi.edu.co/manuales/servicios_apoyo/images/calendario_acad.jpg" alt="Calendario">
+                <p>Calendario Académico</p>
+            </div>
+            <div class="icon">
+                <img src="https://th.bing.com/th/id/OIP.Dj51mcoh0CV0IWPiBc6U1AHaHa?rs=1&pid=ImgDetMain" alt="agenda">
+                <p>Agenda</p>
+            </div>
+            <div class="icon">
+                <img src="https://cdn-icons-png.flaticon.com/512/4230/4230718.png" alt="Servicios de apoyo">
+                <p>Servicios de apoyo</p>
+            </div>
+            <div class="icon">
+                <img src="https://th.bing.com/th/id/OIP.-7UXyxKp30TGv7Oz8sAoewHaHk?w=900&h=920&rs=1&pid=ImgDetMain" alt="Biblioteca">
+                <p>Biblioteca</p>
+            </div>
+            <div class="icon">
+                <img src="https://th.bing.com/th/id/OIP.uS3hsIfawf4RKzYhZ_lK1wAAAA?rs=1&pid=ImgDetMain" alt="Biblioteca digital">
+                <p>Biblioteca digital</p>
+            </div>
+            <div class="icon">
+                <img src="https://png.pngtree.com/png-clipart/20230425/original/pngtree-magazine-line-icon-png-image_9096246.png" alt="portal de revista">
+                <p>portal de revista</p>
+            </div>
+            <div class="icon">
+                <img src="https://www.designi.com.br/images/preview/10475711.jpg" alt="Bienestar universitario">
+                <p>Bienestar universitario</p>
+            </div>
+            <div class="icon">
+                <img src="https://letrasparaimprimir.org/wp-content/uploads/2023/05/LETRAS-A-COLORES-EN-PDF-3-1087x1536.jpg" alt="Acerca de Banner Icesi">
+                <p>Acerca de Banner Icesi</p>
+            </div>
+        </div>
+
+        <div class="anuncios">
+            <h3>Anuncios</h3>
+            <p>Actualmente no tiene anuncios.</p>
+        </div>
+
+        <div class="noticias">
+            <h3>Noticias</h3>
+            <p>No se pudo encontrar contenido.</p>
+        </div>
+
+        <div class="footer">
+            <img src="https://th.bing.com/th/id/R.4073836f2fdb4bcd7ec76a1ff2f08886?rik=nSKRykqkPd%2bZ7g&pid=ImgRaw&r=0" alt="Facebook">
+            <img src="https://th.bing.com/th/id/OIP.sARywZlcPRTPijRbkbiwfAHaHa?rs=1&pid=ImgDetMain" alt="Twitter">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+            <img src="https://www.icesi.edu.co/favicon.ico" alt="Logo Universidad Icesi">
+        </div>
+    </div>
+</body>
+</html>
